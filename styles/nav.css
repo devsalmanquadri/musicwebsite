@@ -1,0 +1,160 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 5vw;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, orange, darkorchid) 1;
+}
+.logo span a {
+  height: 4vw;
+  width: auto;
+  background-color: black;
+  display: inline-block;
+  text-decoration: none;
+  color: orange;
+  font-size: 1.8vw;
+  position: fixed;
+  top: 0;
+  left: 1vw;
+}
+.logo span a img {
+  height: 4.1vw;
+  object-fit: cover;
+}
+.logo {
+  padding-top: 0.3vw;
+}
+.navright {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20vw;
+  position: fixed;
+  right: 0;
+}
+.navright:last-child {
+  font-size: 1vw;
+  background-color: rgb(203, 132, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 2.8vw;
+  height: 2.8vw;
+  color: #fff;
+}
+.navright span a {
+  color: #fff;
+}
+.profileoptions {
+  line-height: 2vw;
+  border: 4px solid;
+  border-image: linear-gradient(to right, orange, darkorchid) 1;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: x-large;
+  height: 20vh;
+  width: 10vw;
+  position: fixed;
+  right: 0;
+  top: 5.1vw;
+  display: none;
+}
+.profileoptions a {
+  color: #fff;
+  text-decoration: none;
+}
+.profileoptions.prset {
+  display: flex;
+}
+.searchsong a {
+  color: #fff;
+  text-decoration: none;
+}
+.searchsong input {
+  border-radius: 1.5vw;
+  width: 25vw;
+  height: 1.8vw;
+  padding-left: 0.5vw;
+  background-color: black;
+  border: none;
+  outline: none;
+  caret-color: #fff;
+  color: #fff;
+  font-size: 1vw;
+  animation: sb 0.3s ease alternate;
+}
+
+.searchsong {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1vw;
+  color: #fff;
+  flex-direction: row;
+  position: fixed;
+  right: 3vw;
+  > input {
+    display: none;
+  }
+}
+.searchicon {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(203, 132, 2);
+  width: 2.8vw;
+  height: 2.8vw;
+  border: 2px solid white;
+}
+.searchicon:active,
+.navright:last-child:active {
+  transition: all;
+  transition-duration: 0.3s;
+  font-size: 0.93vw;
+  background-color: rgb(166, 2, 166);
+}
+.searchsong.sbar {
+  border-radius: 1.5vw;
+  border: 2px solid #fff;
+  width: 30vw;
+  animation: sb1 0.3s ease alternate;
+  > input {
+    display: flex;
+  }
+}
+@keyframes sb {
+  from {
+    width: 1vw;
+  }
+  to {
+    width: 30vw;
+  }
+}
+@keyframes sb1 {
+  from {
+    width: auto;
+  }
+  to {
+    width: auto;
+  }
+}
+.searchicon.sbar {
+  border: none;
+}
+.searchicon.sbar:active,
+.searchicon.sbar {
+  background-color: transparent;
+}

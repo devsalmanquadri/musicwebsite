@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salman's Music Web</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./assets/images/DarshVibes3.png" />
+  <link rel="stylesheet" href="./styles/nav.css" />
+</head>
+
+<body>
+  <div class="main">
+    <nav>
+      <div class="logo">
+        <span><a href="#">SMW</a></span>
+      </div>
+      <span class="searchsong">
+        <input type="text" />
+        <span class="searchicon" onclick="tsbar()">
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </span>
+      </span>
+      <div class="navright" onclick="prfset()">
+        <span><i class="fa-regular fa-user fa-xl"></i></span>
+      </div>
+    </nav>
+    <div class="profileoptions">
+      <span><a href="#">Profile</a></span>
+      <span><a href="#">Settings</a></span>
+      <span><a href="#">About</a></span>
+      <span><a href="#">Help</a></span>
+    </div>
+  </div>
+  <div class="home">
+    <div class="sidebar">
+      <div class="arrows">
+        <div class="open1" onclick="open11()">
+          Songs <i class="fa-solid fa-arrow-left" style="color: #ffffff"></i>
+        </div>
+
+        <div class="close1" onclick="close11()">
+          <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+        </div>
+      </div>
+
+      <div class="music">
+        <div class="mimg">
+          <img src="./images/img1.jpg" alt="" />
+        </div>
+        <div class="mdet">
+          <span class="mname">Tareyan De Des</span>
+          <span class="singer">Prabh Gill</span>
+        </div>
+      </div>
+
+      <div class="music">
+        <div class="mimg">
+          <img src="./images/img2.jpg" alt="" />
+        </div>
+        <div class="mdet">
+          <span class="mname">Power</span>
+          <span class="singer">Sidhu Moosewala</span>
+        </div>
+      </div>
+
+      <div class="music">
+        <div class="mimg">
+          <img src="./images/img3.jpg" alt="" />
+        </div>
+        <div class="mdet">
+          <span class="mname">Goat</span>
+          <span class="singer">Sidhu Moosewala</span>
+        </div>
+      </div>
+
+      <div class="music">
+        <div class="mimg">
+          <img src="./images/img4.jpg" alt="" />
+        </div>
+        <div class="mdet">
+          <span class="mname">Satisfy</span>
+          <span class="singer">Sidhu Moosewala</span>
+        </div>
+      </div>
+
+      <div class="music">
+        <div class="mimg">
+          <img src="./images/img5.jpg" alt="" />
+        </div>
+        <div class="mdet">
+          <span class="mname">Satisfy</span>
+          <span class="singer">Sidhu Moosewala</span>
+        </div>
+      </div>
+
+      <div class="music">
+        <div class="mimg">
+          <img src="./images/img6.jpg" alt="" />
+        </div>
+        <div class="mdet">
+          <span class="mname">Satisfy</span>
+          <span class="singer">Sidhu Moosewala</span>
+        </div>
+      </div>
+
+      <div class="music">
+        <div class="mimg">
+          <img src="./images/img7.jpg" alt="" />
+        </div>
+        <div class="mdet">
+          <span class="mname">Satisfy</span>
+          <span class="singer">Sidhu Moosewala</span>
+        </div>
+      </div>
+
+      <div class="music">
+        <div class="mimg">
+          <img src="./images/img8.jpg" alt="" />
+        </div>
+        <div class="mdet">
+          <span class="mname">Satisfy</span>
+          <span class="singer">Sidhu Moosewala</span>
+        </div>
+      </div>
+    </div>
+    <div class="blankside"></div>
+
+    <audio id="myAudio" src="./audio/khogayehum.mp3" loop preload="auto"></audio>
+
+    <audio id="song0" data-sname="Kho Gaye Hum Kaha" src="./audio/khogayehum.mp3" loop preload="auto"></audio>
+    <audio id="song1" data-sname="Hamsafar" src="./audio/hamsafar.mp3" loop preload="auto"></audio>
+    <audio id="song2" data-sname="Ikvaariya" src="./audio/ikvaariaa.mp3" loop preload="auto"></audio>
+    <audio id="song3" data-sname="Restart - 12th Fail" src="./audio/Restart - 12th Fail.mp3" loop
+      preload="auto"></audio>
+    <audio id="song4" data-sname="Raabta" src="./audio/raabta.mp3" loop preload="auto"></audio>
+    <audio id="song5" data-sname="Punchnama" src="./audio/paro.mp3" loop preload="auto"></audio>
+    <audio id="song6" data-sname="Hua Main - ANIMAL" src="./audio/Hua Main - ANIMAL.mp3" loop preload="auto"></audio>
+    <audio id="song7" data-sname="Jee Ni Lagda" src="./audio/Jee Ni Lagda.mp3" loop preload="auto"></audio>
+    <audio id="song8" data-sname="Ladki Beautiful" src="./audio/kargyichull.mp3" loop preload="auto"></audio>
+    <audio id="song9" data-sname="Bahubali Theme Song" src="./audio/jiyorebahubali.mp3" loop preload="auto"></audio>
+    <audio id="song10" data-sname="Kalaastar" src="./audio/Kalaastar - Yo Yo Honey Singh.mp3" loop
+      preload="auto"></audio>
+    <audio id="song11" data-sname="Khairiyat Gadar 2" src="./audio/Khairiyat Gadar 2 128 Kbps.mp3" loop
+      preload="auto"></audio>
+    <audio id="song12" data-sname="Leke Prabhu Ka Naam" src="./audio/Leke Prabhu Ka Naam Tiger 3 128 Kbps.mp3" loop
+      preload="auto"></audio>
+    <audio id="song13" data-sname="Let me love you" src="./audio/letmeloveu.mp3" loop preload="auto"></audio>
+    <audio id="song14" data-sname="Pyaar Mangda" src="./audio/Pyaar Mangda Navjeet 128 Kbps.mp3" loop
+      preload="auto"></audio>
+    <audio id="song15" data-sname="Udd Jaa Kaale Kaava" src="./audio/Udd Jaa Kaale Kaava Gadar 2 128 Kbps.mp3" loop
+      preload="auto"></audio>
+    <audio id="song16" data-sname="For Siddhu Moosewala"
+      src="./audio/Tribute Track For Siddhu Moosewala Nobby Singh 128 Kbps.mp3" loop preload="auto"></audio>
+    <audio id="song17" data-sname="Sardaar Munde" src="./audio/Sardaar Munde.mp3" loop preload="auto"></audio>
+
+    <div class="interface">
+      <div class="playlist-outer">
+        <div class="topic">
+          <span class="ptopic">Songs</span>
+          <div class="line"></div>
+        </div>
+
+        <div class="playlists" onload="loadplaylist()"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="songdet">
+      <div class="fmimg">
+        <img src="./images/img1.jpg" alt="" />
+      </div>
+      <div class="fmdet">
+        <span class="fmname">Power</span>
+        <span class="singer">Sidhu Moosewala</span>
+      </div>
+    </div>
+
+    <div class="playing">
+      <div class="playbar">
+        <div class="ranger">
+          <span id="current_time">0:0</span>
+          <input type="range" min="0" max="100" value="0" id="music_slider" />
+          <span id="end_time">4:34</span>
+        </div>
+      </div>
+      <div class="playbtn">
+        <i class="fa-solid fa-rotate-left fa-xl"></i>
+        <i class="fa-solid fa-circle-chevron-left fa-xl"></i>
+        <i class="fa-solid fa-play fa-2xl"></i>
+        <i class="fa-solid fa-pause fa-2xl" style="display: none;"></i>
+        <i class="fa-solid fa-circle-chevron-right fa-xl"></i>
+        <i class="fa-solid fa-rotate-right fa-xl"></i>
+      </div>
+    </div>
+
+    <div class="sound">
+      <i class="fa-solid fa-volume-high" style="color: #ffffff"></i>
+      <input value="0.8" id="oas1" type="range" class="rnge" oninput="chvol()" min="0.0" max="1.0" step=".01" />
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="./js/sidebar.js"></script>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/nav.js"></script>
+</body>
+
+</html>
