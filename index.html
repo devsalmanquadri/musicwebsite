@@ -19,14 +19,14 @@
       <div class="logo">
         <span><a href="#">SMW</a></span>
       </div>
-      <span class="searchsong">
-        <input type="text" />
-        <span class="searchicon" onclick="tsbar()">
-          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+      <div class="navright">
+        <span class="searchsong">
+          <input id="inseraudio" type="text" />
+          <span class="searchicon" onclick="tsbar()">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </span>
         </span>
-      </span>
-      <div class="navright" onclick="prfset()">
-        <span><i class="fa-regular fa-user fa-xl"></i></span>
+        <span onclick="prfset()"><i class="fa-regular fa-user fa-xl"></i></span>
       </div>
     </nav>
     <div class="profileoptions">
@@ -130,34 +130,9 @@
     </div>
     <div class="blankside"></div>
 
-    <audio id="myAudio" src="./audio/khogayehum.mp3" loop preload="auto"></audio>
+    <audio id="myAudio" controlsList="nodownload" src="./audio/Aa Mil.mp3" preload="auto"></audio>
 
-    <audio id="song0" data-sname="Kho Gaye Hum Kaha" src="./audio/khogayehum.mp3" loop preload="auto"></audio>
-    <audio id="song1" data-sname="Hamsafar" src="./audio/hamsafar.mp3" loop preload="auto"></audio>
-    <audio id="song2" data-sname="Ikvaariya" src="./audio/ikvaariaa.mp3" loop preload="auto"></audio>
-    <audio id="song3" data-sname="Restart - 12th Fail" src="./audio/Restart - 12th Fail.mp3" loop
-      preload="auto"></audio>
-    <audio id="song4" data-sname="Raabta" src="./audio/raabta.mp3" loop preload="auto"></audio>
-    <audio id="song5" data-sname="Punchnama" src="./audio/paro.mp3" loop preload="auto"></audio>
-    <audio id="song6" data-sname="Hua Main - ANIMAL" src="./audio/Hua Main - ANIMAL.mp3" loop preload="auto"></audio>
-    <audio id="song7" data-sname="Jee Ni Lagda" src="./audio/Jee Ni Lagda.mp3" loop preload="auto"></audio>
-    <audio id="song8" data-sname="Ladki Beautiful" src="./audio/kargyichull.mp3" loop preload="auto"></audio>
-    <audio id="song9" data-sname="Bahubali Theme Song" src="./audio/jiyorebahubali.mp3" loop preload="auto"></audio>
-    <audio id="song10" data-sname="Kalaastar" src="./audio/Kalaastar - Yo Yo Honey Singh.mp3" loop
-      preload="auto"></audio>
-    <audio id="song11" data-sname="Khairiyat Gadar 2" src="./audio/Khairiyat Gadar 2 128 Kbps.mp3" loop
-      preload="auto"></audio>
-    <audio id="song12" data-sname="Leke Prabhu Ka Naam" src="./audio/Leke Prabhu Ka Naam Tiger 3 128 Kbps.mp3" loop
-      preload="auto"></audio>
-    <audio id="song13" data-sname="Let me love you" src="./audio/letmeloveu.mp3" loop preload="auto"></audio>
-    <audio id="song14" data-sname="Pyaar Mangda" src="./audio/Pyaar Mangda Navjeet 128 Kbps.mp3" loop
-      preload="auto"></audio>
-    <audio id="song15" data-sname="Udd Jaa Kaale Kaava" src="./audio/Udd Jaa Kaale Kaava Gadar 2 128 Kbps.mp3" loop
-      preload="auto"></audio>
-    <audio id="song16" data-sname="For Siddhu Moosewala"
-      src="./audio/Tribute Track For Siddhu Moosewala Nobby Singh 128 Kbps.mp3" loop preload="auto"></audio>
-    <audio id="song17" data-sname="Sardaar Munde" src="./audio/Sardaar Munde.mp3" loop preload="auto"></audio>
-
+    <div id="audio-players"></div>
     <div class="interface">
       <div class="playlist-outer">
         <div class="topic">
@@ -180,7 +155,10 @@
         <span class="singer">Sidhu Moosewala</span>
       </div>
     </div>
-
+    <div class="sound">
+      <i class="fa-solid fa-volume-high" style="color: #ffffff"></i>
+      <input id="oas1" value="100" type="range" class="rnge" oninput="chvol()" min="0" max="100" step="1" />
+    </div>
     <div class="playing">
       <div class="playbar">
         <div class="ranger">
@@ -199,10 +177,7 @@
       </div>
     </div>
 
-    <div class="sound">
-      <i class="fa-solid fa-volume-high" style="color: #ffffff"></i>
-      <input value="0.8" id="oas1" type="range" class="rnge" oninput="chvol()" min="0.0" max="1.0" step=".01" />
-    </div>
+
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
