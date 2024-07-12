@@ -356,6 +356,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .tooltiptext {
+    display: none;
+  }
   .playlists {
     grid-template-columns: auto;
   }
