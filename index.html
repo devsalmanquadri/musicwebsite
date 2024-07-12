@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salman's Music Web</title>
+  <title>Melody Vibes: A Music Platform for Everyone</title>
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -17,7 +17,7 @@
   <div class="main">
     <nav>
       <div class="logo">
-        <span><a href="#">SMW</a></span>
+        <span><a href="#">Melody <span class="logoinner">vibes</span></a></span>
       </div>
       <div class="navright">
         <span class="searchsong">
@@ -155,10 +155,7 @@
         <span class="singer">Prateek Kuhad</span>
       </div>
     </div>
-    <div class="sound">
-      <i class="volumeicon fa-solid fa-volume-high" style="color: #ffffff"></i>
-      <input id="oas1" value="100" type="range" class="rnge" oninput="chvol()" min="0" max="100" step="1" />
-    </div>
+
     <div class="playing">
       <div class="playbar">
         <div class="ranger">
@@ -168,13 +165,29 @@
         </div>
       </div>
       <div class="playbtn">
-        <i class="fa-solid fa-rotate-left fa-xl" onclick="sec5back()"></i>
-        <i class="fa-solid fa-circle-chevron-left fa-xl"></i>
-        <i class="fa-solid fa-play fa-2xl"></i>
-        <i class="fa-solid fa-pause fa-2xl" style="display: none;"></i>
-        <i class="fa-solid fa-circle-chevron-right fa-xl"></i>
-        <i class="fa-solid fa-rotate-right fa-xl" onclick="sec5skip()"></i>
+        <i class="fa-solid tooltip fa-rotate-left fa-xl" onclick="sec5back()">
+          <div class="tooltiptext">right</div>
+        </i>
+        <i class="fa-solid tooltip fa-circle-chevron-left fa-xl">
+          <div class="tooltiptext">shift+right</div>
+        </i>
+        <i class="fa-solid tooltip fa-play fa-2xl">
+          <div class="tooltiptext">space</div>
+        </i>
+        <i class="fa-solid tooltip fa-pause fa-2xl" style="display: none;">
+          <div class="tooltiptext">space</div>
+        </i>
+        <i class="fa-solid tooltip fa-circle-chevron-right fa-xl">
+          <div class="tooltiptext">shift+right</div>
+        </i>
+        <i class="fa-solid tooltip fa-rotate-right fa-xl" onclick="sec5skip()">
+          <div class="tooltiptext">right</div>
+        </i>
       </div>
+    </div>
+    <div class="sound">
+      <i class="volumeicon fa-solid fa-volume-high" style="color: #ffffff"></i>
+      <input id="oas1" value="100" type="range" class="rnge" oninput="chvol()" min="0" max="100" step="1" />
     </div>
 
 
