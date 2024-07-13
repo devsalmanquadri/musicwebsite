@@ -48,10 +48,10 @@ To get started with the music website, follow these steps:
 To add new music tracks to the library:
 
 1. **Add Track Information:**
-   - Update the `script.js` file in the `src/js/` directory with the new track details.
+   - Update the `script.js` file in the `js/` directory with the new track details.
 
 2. **Add Track Files:**
-   - Place the audio files in the appropriate directory under `src/songs/`.
+   - Place the audio files in the appropriate directory under `audio/`.
 
 ## Deployment
 
