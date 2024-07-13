@@ -31,7 +31,7 @@ To get started with the music website, follow these steps:
 - `index.html`: Main HTML file for the website.
 - `styles/style.css`: CSS file for styling the website.
 - `js/script.js`: JS file for scripts of the website.
-- `assets/`: Directory for images, icons.
+- `images/`: Directory for images, icons.
 - `audio/`: Directory for music tracks.
 
 ## Customization
