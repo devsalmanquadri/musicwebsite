@@ -16,8 +16,8 @@ To get started with the music website, follow these steps:
 
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/your-username/music-website.git
-    cd music-website
+    git clone https://github.com/devsalmanquadri/musicwebsite.git
+    cd musicwebsite
     ```
 
 2. **Install Dependencies:**
@@ -48,22 +48,10 @@ To get started with the music website, follow these steps:
 To add new music tracks to the library:
 
 1. **Add Track Information:**
-   - Update the `tracks.js` file in the `src/data/` directory with the new track details.
+   - Update the `script.js` file in the `src/js/` directory with the new track details.
 
 2. **Add Track Files:**
-   - Place the audio files in the appropriate directory under `public/assets/tracks/`.
-
-### Changing Colors and Fonts
-
-To change the colors and fonts used in the website:
-
-1. **CSS Variables:**
-   - Open the `src/styles/variables.css` file.
-   - Update the CSS variables for primary and secondary colors.
-
-2. **Global Styles:**
-   - Open the `src/styles/global.css` file.
-   - Change the font-family properties to use your preferred fonts.
+   - Place the audio files in the appropriate directory under `src/songs/`.
 
 ## Deployment
 
@@ -82,13 +70,10 @@ To deploy the music website, follow these steps:
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ## Contact
 
-If you have any questions or need further assistance, feel free to contact me at [your-email@example.com].
+If you have any questions or need further assistance, feel free to contact me at secretofsk@gmail.com.
 
 ---
 
