@@ -1,14 +1,14 @@
 # Music Website
 
-This project is a music website with a React frontend. It allows users to browse, play, and manage their favorite music tracks in a visually appealing and user-friendly interface.
+This project is a music website built with HTML and CSS. It allows users to browse, play, and manage their favorite music tracks in a visually appealing and user-friendly interface.
 
 ## Features
 
 - **User-Friendly Interface:** Easy-to-navigate design with a focus on usability.
-- **React Frontend:** Built with React for a modern and responsive user experience.
 - **Music Player:** Integrated music player with play, pause, and skip functionalities.
 - **Music Library:** Browse and manage a library of music tracks.
 - **Responsive Design:** Optimized for various screen sizes, ensuring a seamless experience on any device.
+- **Modern Aesthetics:** Incorporates colorful backgrounds and sleek design elements for a modern look.
 
 ## Getting Started
 
@@ -20,26 +20,18 @@ To get started with the music website, follow these steps:
     cd musicwebsite
     ```
 
-2. **Install Dependencies:**
-    ```bash
-    npm install
-    ```
+2. **Open the Project:**
+    Open the project in your preferred code editor (e.g., VSCode).
 
-3. **Start the Development Server:**
-    ```bash
-    npm start
-    ```
-    This will start the development server and open the website in your default browser.
+3. **Preview Your Website:**
+    Open the `index.html` file in a web browser to preview your music website.
 
 ## Project Structure
 
-- `src/`: Contains the source code for the React application.
-  - `components/`: Reusable React components.
-  - `pages/`: Different pages of the application.
-  - `assets/`: Images, icons, and other assets.
-  - `styles/`: CSS and styling files.
-- `public/`: Static files and the HTML template.
-- `package.json`: Project dependencies and scripts.
+- `index.html`: Main HTML file for the website.
+- `style.css`: CSS file for styling the website.
+- `assets/`: Directory for images, icons.
+- `audios/`: Directory for music tracks.
 
 ## Customization
 
@@ -48,23 +40,33 @@ To get started with the music website, follow these steps:
 To add new music tracks to the library:
 
 1. **Add Track Information:**
-   - Update the `script.js` file in the `js/` directory with the new track details.
+   - Update the HTML in `index.html` to include new track details.
 
 2. **Add Track Files:**
-   - Place the audio files in the appropriate directory under `audio/`.
+   - Place the audio files in the appropriate directory under `audios/`.
+
+
+### Adding New Sections
+
+To add new sections to your website:
+
+1. **HTML:**
+   - Open the `index.html` file.
+   - Add a new section with the desired content.
+
+2. **CSS:**
+   - Open the `styles/style.css` file.
+   - Add new styles for the section to ensure it matches the overall design.
+2. **JS:**
+   - Open the `js/script.js` file.
+   - Add new Scripts for the section.
 
 ## Deployment
 
-To deploy the music website, follow these steps:
+To deploy the music website:
 
-1. **Build the Project:**
-    ```bash
-    npm run build
-    ```
-    This will create an optimized production build of the application.
-
-2. **Deploy:**
-    Deploy the contents of the `build` directory to your preferred web hosting service (e.g., GitHub Pages, Netlify, Vercel).
+1. **Upload Files:**
+   Upload the files to your preferred web hosting service (e.g., GitHub Pages, Netlify, Vercel).
 
 ## Contributing
 
