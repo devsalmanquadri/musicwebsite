@@ -1,126 +1,102 @@
+/* General Navbar Styling */
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  align-items: center;
+  background-color: #121212; /* Dark background */
   height: 4rem;
   position: fixed;
-  z-index: 1;
+  top: 0;
   width: 100%;
-  border: none;
-  border-bottom: 2px solid;
-  border-image: linear-gradient(to right, orange, darkorchid) 1;
   padding: 0 2rem;
-}
-.logo span a {
-  height: 2rem;
-  width: auto;
-  background-color: black;
-  display: inline-block;
-  text-decoration: none;
-  color: orange;
-  font-size: 2rem;
-}
-.logo span a img {
-  height: 3rem;
-  object-fit: cover;
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+.logo a {
+  color: #f0f0f0; /* Light text color */
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo a .logoinner {
+  color: #ff6a00; /* Accent color for inner logo text */
+  font-weight: bold; /* Increase font weight for emphasis */
+}
+/* Styling for Search Container in .navright */
 .navright {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 3rem;
-  gap: 1rem;
-}
-.navright:last-child {
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.navright .searchsong {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  color: #fff;
-  padding: 1.2rem;
-  border: 2px solid white;
-  border-radius: 50%;
-  background-color: rgb(203, 132, 2);
-}
-
-.searchsong a {
-  color: #fff;
-  text-decoration: none;
-}
-.searchsong input {
-  border-radius: 1.5vw;
-  width: 10rem;
-  height: 2rem;
-  padding-left: 0.5vw;
-  background-color: black;
-  border: 2px solid white;
-  outline: none;
-  caret-color: #fff;
-  color: #fff;
-  font-size: 1rem;
 }
 
 .searchsong {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1vw;
-  color: #fff;
-  > input {
-    display: none;
-  }
+  position: relative;
 }
 
-.navright .searchicon:active {
-  transition: all;
-  transition-duration: 0.3s;
-  font-size: 0.9rem;
-}
-.searchsong.sbar {
-  background-color: transparent;
+.searchsong input[type="text"] {
+  display: block;
+  padding: 0.6rem;
+  padding-right: 3rem;
+  width: 0; /* Adjust width as needed */
+  height: 2.4rem; /* Adjust height as needed */
   border: none;
-  width: 10rem;
-  position: fixed;
-  right: 4rem;
-  > input {
-    display: flex;
-  }
+  border-radius: 1.5rem; /* Rounded corners */
+  font-size: 1.2rem;
+  background-color: #f0f0f0; /* Light background */
+  color: #333; /* Text color */
+  outline: none;
+  transition: all 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  opacity: 0;
+  visibility: hidden;
 }
 
-.searchicon.sbar {
-  border: none;
+.searchsong input[type="text"]:focus {
+  background-color: #fff; /* Lighten background on focus */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow on focus */
 }
-.searchicon.sbar:active,
-.searchicon.sbar {
-  background-color: transparent;
+
+.searchsong .searchicon {
+  position: absolute;
+  right: 0.8rem; /* Adjust position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666; /* Icon color */
+  cursor: pointer;
+  transition: color 0.3s;
 }
+
+.searchsong .searchicon:hover {
+  color: #333; /* Darken icon color on hover */
+}
+
+.searchsong.sbar input {
+  width: calc(12rem + 3vw); /* Expanded width */
+  /* padding: 0.5rem 1rem; Adjust padding for expanded input */
+  opacity: 1;
+  visibility: visible;
+}
+
 @media screen and (max-width: 600px) {
-  .navright:last-child,
-  .searchsong {
-    font-size: 1.2rem;
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
   }
-  .searchsong {
-    flex-direction: column-reverse;
-    justify-content: end;
-    align-items: end;
-    display: none;
-  }
-  .searchsong.sbar {
-    right: 0;
 
-    align-items: end;
+  .logo {
+    margin-bottom: 1rem;
   }
-  .navright,
-  .navright .searchicon {
-    align-items: end;
-    /* justify-content: end; */
+
+  .navright {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .searchsong input.sbar {
+    width: calc(100% - 4rem); /* Adjust width for smaller screens */
+    padding: 0.5rem 1rem; /* Adjust padding for expanded input */
   }
 }

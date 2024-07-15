@@ -419,84 +419,43 @@ body {
 /* Base styles (for screens wider than 1900px) */
 
 /* Media Queries */
-@media screen and (max-width: 1900px) {
-  .playlists {
-    grid-template-columns: auto auto auto;
-  }
-}
+/* Default styles */
 
-@media screen and (max-width: 1100px) {
-  .playlists {
-    grid-template-columns: auto auto;
-  }
+/* Responsive adjustments */
+.playlists {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+@media screen and (max-width: 1300px) {
   .sound {
     display: none;
   }
 }
-@media screen and (max-width: 800px) {
-  .tooltiptext {
-    display: none;
-  }
-  .line {
-    width: 6rem;
-  }
-  .playlists {
-    grid-template-columns: auto;
-  }
-  .playlist {
-    margin-bottom: 2vw;
-  }
-  .mimg img {
-    width: 3rem;
-    height: 3rem;
-  }
-  .pimg img {
-    width: 60vw;
-    object-fit: cover;
-  }
-  .pdet {
-    margin: 0.5rem 0;
-  }
-  .pdet span {
-    font-size: 1.2rem;
-  }
-  .pdet i {
-    font-size: 1.5rem;
-  }
-  .ptopic {
-    margin: 0.1rem 0;
-    font-size: 1.5rem;
-  }
-  .sidebar,
-  .blankside {
-    width: 12%;
-  }
-  .playlist-outer {
-    width: 96%;
-  }
-  .interface {
-    margin-bottom: 10rem;
-    margin-left: 0;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .playlist {
     padding: 10px 15px;
+    margin-bottom: 0.5rem;
   }
-  .pimg {
+  .pimg,
+  .fmimg {
     width: 60px;
     height: 60px;
     margin-right: 15px;
   }
+  .pdet {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+  }
   .pdet .name {
     font-size: 1em;
+    margin-right: 8px;
   }
-
-  .songdet {
-    margin-bottom: 20px;
+  .pdet span,
+  .fmname {
+    font-size: 1.2rem;
+  }
+  .pdet i {
+    font-size: 1.5rem;
   }
   .playbtn {
     margin-top: 20px;
@@ -510,17 +469,7 @@ body {
     display: flex;
     width: 100%;
     margin-right: 0;
-  }
-  .fmimg {
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-  }
-  .fmname {
-    font-size: 1.2rem;
-  }
-  .singer {
-    font-size: 0.9rem;
+    flex-direction: row;
   }
   .tooltip {
     margin: 0 8px;
@@ -535,45 +484,44 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .sound {
+@media screen and (max-width: 800px) {
+  .tooltiptext {
     display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .interface {
+    margin-top: 8rem;
+  }
+  .playlist {
+    margin-bottom: 0.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .interface {
+    margin-bottom: 11rem;
+  }
   .footer {
     flex-direction: column;
-  }
-  .playing {
-    width: 100%;
-  }
-  .playlists {
-    grid-template-columns: auto;
-  }
-  .playlist {
-    padding: 10px;
-  }
-  .pimg {
-    object-fit: contain;
-  }
-  .pdet {
-    flex-direction: row;
-  }
-  .pdet .name {
-    font-size: 0.9em;
-  }
-  .footer {
-    padding: 15px;
+    gap: 1rem;
   }
   .fmimg {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
   }
   .fmname {
     font-size: 1rem;
   }
   .singer {
     font-size: 0.8rem;
+  }
+  .playing {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .playlists {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
