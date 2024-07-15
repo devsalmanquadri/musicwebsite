@@ -20,126 +20,25 @@
         <span><a href="#">Melody <span class="logoinner">vibes</span></a></span>
       </div>
       <div class="navright">
-        <span class="searchsong">
+        <div class="searchsong">
           <input id="inseraudio" type="text" />
           <span class="searchicon" onclick="tsbar()">
             <i class="fa-solid fa-magnifying-glass fa-xl"></i>
           </span>
-        </span>
-        <span onclick="prfset()"><i class="fa-regular fa-user fa-xl"></i></span>
+        </div>
       </div>
     </nav>
-    <div class="profileoptions">
-      <span><a href="#">Profile</a></span>
-      <span><a href="#">Settings</a></span>
-      <span><a href="#">About</a></span>
-      <span><a href="#">Help</a></span>
-    </div>
   </div>
   <div class="home">
-    <div class="sidebar">
-      <div class="arrows">
-        <div class="open1" onclick="open11()">
-          Songs <i class="fa-solid fa-arrow-left" style="color: #ffffff"></i>
-        </div>
-
-        <div class="close1" onclick="close11()">
-          <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
-        </div>
-      </div>
-
-      <div class="music">
-        <div class="mimg">
-          <img src="./images/img1.jpg" alt="" />
-        </div>
-        <div class="mdet">
-          <span class="mname">Tareyan De Des</span>
-          <span class="singer">Prabh Gill</span>
-        </div>
-      </div>
-
-      <div class="music">
-        <div class="mimg">
-          <img src="./images/img2.jpg" alt="" />
-        </div>
-        <div class="mdet">
-          <span class="mname">Power</span>
-          <span class="singer">Sidhu Moosewala</span>
-        </div>
-      </div>
-
-      <div class="music">
-        <div class="mimg">
-          <img src="./images/img3.jpg" alt="" />
-        </div>
-        <div class="mdet">
-          <span class="mname">Goat</span>
-          <span class="singer">Sidhu Moosewala</span>
-        </div>
-      </div>
-
-      <div class="music">
-        <div class="mimg">
-          <img src="./images/img4.jpg" alt="" />
-        </div>
-        <div class="mdet">
-          <span class="mname">Satisfy</span>
-          <span class="singer">Sidhu Moosewala</span>
-        </div>
-      </div>
-
-      <div class="music">
-        <div class="mimg">
-          <img src="./images/img5.jpg" alt="" />
-        </div>
-        <div class="mdet">
-          <span class="mname">Satisfy</span>
-          <span class="singer">Sidhu Moosewala</span>
-        </div>
-      </div>
-
-      <div class="music">
-        <div class="mimg">
-          <img src="./images/img6.jpg" alt="" />
-        </div>
-        <div class="mdet">
-          <span class="mname">Satisfy</span>
-          <span class="singer">Sidhu Moosewala</span>
-        </div>
-      </div>
-
-      <div class="music">
-        <div class="mimg">
-          <img src="./images/img7.jpg" alt="" />
-        </div>
-        <div class="mdet">
-          <span class="mname">Satisfy</span>
-          <span class="singer">Sidhu Moosewala</span>
-        </div>
-      </div>
-
-      <div class="music">
-        <div class="mimg">
-          <img src="./images/img8.jpg" alt="" />
-        </div>
-        <div class="mdet">
-          <span class="mname">Satisfy</span>
-          <span class="singer">Sidhu Moosewala</span>
-        </div>
-      </div>
-    </div>
-    <div class="blankside"></div>
-
-    <audio id="myAudio" controlsList="nodownload" src="./audio/Aa Mil.mp3" preload="auto"></audio>
+    <audio id="myAudio" controlsList="nodownload" src="./audio/Aa Mil.aac" preload="auto"></audio>
 
     <div id="audio-players"></div>
     <div class="interface">
       <div class="playlist-outer">
         <div class="topic">
           <span class="ptopic">Songs</span>
-          <div class="line"></div>
+          <!-- <div class="line"></div> -->
         </div>
-
         <div class="playlists" onload="loadplaylist()"></div>
       </div>
     </div>
@@ -160,7 +59,7 @@
       <div class="playbar">
         <div class="ranger">
           <span id="current_time">0:0</span>
-          <input type="range" min="0" max="100" value="0" id="music_slider" />
+          <input class="audiorange" type="range" min="0" max="100" value="0" id="music_slider" />
           <span id="end_time">4:34</span>
         </div>
       </div>

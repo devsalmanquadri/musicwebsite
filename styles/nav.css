@@ -1,6 +1,5 @@
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background-color: black;
   height: 4rem;
@@ -30,7 +29,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 6rem;
+  width: 3rem;
   gap: 1rem;
 }
 .navright:last-child {
@@ -39,7 +38,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.navright span {
+.navright .searchsong {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,40 +50,14 @@ nav {
   border-radius: 50%;
   background-color: rgb(203, 132, 2);
 }
-.navright span a {
-  color: #fff;
-}
-.profileoptions {
-  line-height: 2rem;
-  border: 4px solid;
-  border-image: linear-gradient(to right, orange, darkorchid) 1;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-size: x-large;
-  height: 12rem;
-  width: 8rem;
-  position: fixed;
-  right: 0;
-  top: 4rem;
-  display: none;
-}
-.profileoptions a {
-  color: #fff;
-  text-decoration: none;
-}
-.profileoptions.prset {
-  display: flex;
-}
+
 .searchsong a {
   color: #fff;
   text-decoration: none;
 }
 .searchsong input {
   border-radius: 1.5vw;
-  width: 30rem;
+  width: 10rem;
   height: 2rem;
   padding-left: 0.5vw;
   background-color: black;
@@ -93,7 +66,6 @@ nav {
   caret-color: #fff;
   color: #fff;
   font-size: 1rem;
-  animation: sb 0.3s ease alternate;
 }
 
 .searchsong {
@@ -107,7 +79,7 @@ nav {
   }
 }
 
-.navright span:active {
+.navright .searchicon:active {
   transition: all;
   transition-duration: 0.3s;
   font-size: 0.9rem;
@@ -115,19 +87,11 @@ nav {
 .searchsong.sbar {
   background-color: transparent;
   border: none;
-  width: 23rem;
+  width: 10rem;
   position: fixed;
-  right: 6rem;
+  right: 4rem;
   > input {
     display: flex;
-  }
-}
-@keyframes sb {
-  from {
-    width: auto;
-  }
-  to {
-    width: 23rem;
   }
 }
 
@@ -142,5 +106,21 @@ nav {
   .navright:last-child,
   .searchsong {
     font-size: 1.2rem;
+  }
+  .searchsong {
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: end;
+    display: none;
+  }
+  .searchsong.sbar {
+    right: 0;
+
+    align-items: end;
+  }
+  .navright,
+  .navright .searchicon {
+    align-items: end;
+    /* justify-content: end; */
   }
 }
