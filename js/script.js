@@ -194,76 +194,21 @@ const audioFiles = [
   },
   { audio: "Woh Raat.mp3", image: "img84.jpg", singer: "Anuv Jain" },
   { audio: "Zakir.mp3", image: "img85.jpg", singer: "Siddharth Amit Bhavsar" },
-  {
-    audio: "2 States - Hulla Re.mp3",
-    image: "2 States - Hulla Re.jpg",
-    singer: "Shankar Mahadevan, Siddharth Mahadevan",
-  },
-  {
-    audio: "2 States - Iski Uski.mp3",
-    image: "2 States - Iski Uski.jpg",
-    singer: "Akriti Kakar, Shahid Mallya",
-  },
-  {
-    audio: "2 States - Locha-e-ulfat.mp3",
-    image: "2 States - Locha-e-ulfat.jpg",
-    singer: "Benny Dayal",
-  },
-  {
-    audio: "2 States - Mast Magan.mp3",
-    image: "2 States - Mast Magan.jpg",
-    singer: "Arijit Singh, Chinmayi Sripada",
-  },
-  {
-    audio: "2 States - Offo.mp3",
-    image: "2 States - Offo.jpg",
-    singer: "Amitabh Bhattacharya, Aditi Singh Sharma",
-  },
-  {
-    audio: "Aa Bhi Jaa Tu Kahin Se - Sonu Nigam.mp3",
-    image: "Aa Bhi Jaa Tu Kahin Se - Sonu Nigam.jpg",
-    singer: "Sonu Nigam",
-  },
-  { audio: "Aahatein.mp3", image: "Aahatein.jpg", singer: "Agnee" },
-  {
-    audio: "Aaj Ibaadat.mp3",
-    image: "Aaj Ibaadat.jpg",
-    singer: "Aditya Narayan",
-  },
-  { audio: "Aayat.mp3", image: "Aayat.jpg", singer: "Arijit Singh" },
-  {
-    audio: "Ab Tohe Jane Na Doongi.mp3",
-    image: "Ab Tohe Jane Na Doongi.jpg",
-    singer: "Payal Dev",
-  },
-  {
-    audio: "Agar Tu Hota.mp3",
-    image: "Agar Tu Hota.jpg",
-    singer: "Ankit Tiwari",
-  },
+
   { audio: "Aisha.mp3", image: "Aisha.jpg", singer: "Amit Trivedi" },
   {
     audio: "Albela Sajan.mp3",
     image: "Albela Sajan.jpg",
     singer: "Shashi Suman, Kunal Pandit, Raja Kumari",
   },
-  {
-    audio: "Alfazon Ki Tarah.mp3",
-    image: "Alfazon Ki Tarah.jpg",
-    singer: "Ankit Tiwari",
-  },
+
   {
     audio: "Angreji Beat.mp3",
     image: "Angreji Beat.jpg",
     singer: "Honey Singh, Gippy Grewal",
   },
   { audio: "Ankhiyaan.mp3", image: "Ankhiyaan.jpg", singer: "Kanika Kapoor" },
-  {
-    audio: "Aye Khuda (Duet Version).mp3",
-    image: "Aye Khuda (Duet Version).jpg",
-    singer: "Arijit Singh, Saim Bhatt",
-  },
-  { audio: "Aye Khuda.mp3", image: "Aye Khuda.jpg", singer: "Saim Bhatt" },
+
   {
     audio: "Badlapur - Jee Karda.mp3",
     image: "Badlapur - Jee Karda.jpg",
@@ -610,7 +555,6 @@ const audioFiles = [
     image: "Matargashti.jpg",
     singer: "Mohit Chauhan",
   },
-  { audio: "Maula.mp3", image: "Maula.jpg", singer: "Javed Ali" },
   {
     audio: "Mera Nachan Nu.mp3",
     image: "Mera Nachan Nu.jpg",
@@ -637,11 +581,7 @@ const audioFiles = [
     image: "Nenjukkule - Shakthishree Gopalan.jpg",
     singer: "Shakthisree Gopalan",
   },
-  {
-    audio: "O Sathi Mere.mp3",
-    image: "O Sathi Mere.jpg",
-    singer: "Arijit Singh",
-  },
+
   {
     audio: "Old School Girl (Haryanvi).mp3",
     image: "Old School Girl (Haryanvi).jpg",
@@ -678,11 +618,7 @@ const audioFiles = [
     image: "Phir Bhi Yeh Zindagi.jpg",
     singer: "Farhan Akhtar",
   },
-  {
-    audio: "Piku - Bezubaan.mp3",
-    image: "Piku - Bezubaan.jpg",
-    singer: "Anupam Roy",
-  },
+
   {
     audio: "Piku - Journey Song.mp3",
     image: "Piku - Journey Song.jpg",
@@ -772,200 +708,6 @@ const audioFiles = [
     audio: "Saturday Saturday.mp3",
     image: "Saturday Saturday.jpg",
     singer: "Badshah, Indeep Bakshi",
-  },
-  { audio: "Sehra.mp3", image: "Sehra.jpg", singer: "Ankit Tiwari" },
-
-  {
-    audio: "Soch Na Sake (version 2).mp3",
-    image: "Soch Na Sake (version 2).jpg",
-    singer: "Arijit Singh, Tulsi Kumar",
-  },
-  {
-    audio: "Soch Na Sake.mp3",
-    image: "Soch Na Sake.jpg",
-    singer: "Arijit Singh, Tulsi Kumar",
-  },
-
-  {
-    audio: "Student Of The Year - Ishq Wala Love.mp3",
-    image: "Student Of The Year - Ishq Wala Love.jpg",
-    singer: "Shekhar Ravjiani, Salim Merchant, Neeti Mohan",
-  },
-  {
-    audio: "Student Of The Year - Kukkad.mp3",
-    image: "Student Of The Year - Kukkad.jpg",
-    singer: "Shahid Mallya",
-  },
-  {
-    audio: "Student Of The Year - Radha.mp3",
-    image: "Student Of The Year - Radha.jpg",
-    singer: "Shreya Ghoshal, Udit Narayan, Vishal Dadlani",
-  },
-  {
-    audio: "Student Of The Year - The Disco Song.mp3",
-    image: "Student Of The Year - The Disco Song.jpg",
-    singer: "Sunidhi Chauhan, Vishal Dadlani",
-  },
-  {
-    audio: "Student Of The Year - Vele.mp3",
-    image: "Student Of The Year - Vele.jpg",
-    singer: "Vishal Dadlani, Shekhar Ravjiani",
-  },
-  {
-    audio: "Taang Uthake.mp3",
-    image: "Taang Uthake.jpg",
-    singer: "Mika Singh, Sohail Sen, Neeti Mohan, Mamta Sharma",
-  },
-  {
-    audio: "Tanu Weds Manu - Sadi Gali.mp3",
-    image: "Tanu Weds Manu - Sadi Gali.jpg",
-    singer: "Lehmber Hussainpuri",
-  },
-  {
-    audio: "Tanu Weds Manu - Yun Hi.mp3",
-    image: "Tanu Weds Manu - Yun Hi.jpg",
-    singer: "Mohit Chauhan, Ujjaini",
-  },
-  { audio: "Tere Bin.mp3", image: "Tere Bin.jpg", singer: "Atif Aslam" },
-  {
-    audio: "Tere Dar Par Sanam (Remake) - Be My Love.mp3",
-    image: "Tere Dar Par Sanam (Remake) - Be My Love.jpg",
-    singer: "Mithoon, Benny Dayal",
-  },
-  {
-    audio: "Tere Liye Mere Kareem.mp3",
-    image: "Tere Liye Mere Kareem.jpg",
-    singer: "Jubin Nautiyal",
-  },
-
-  {
-    audio: "The Shaukeens - Manali Trance.mp3",
-    image: "The Shaukeens - Manali Trance.jpg",
-    singer: "Neha Kakkar, Lil Golu, Yo Yo Honey Singh",
-  },
-  {
-    audio: "Titliyan.mp3",
-    image: "Titliyan.jpg",
-    singer: "Sunidhi Chauhan, Sajid-Wajid, Chinmayi",
-  },
-  { audio: "Tu Bhoola Jise.mp3", image: "Tu Bhoola Jise.jpg", singer: "K.K." },
-  {
-    audio: "Tu Hi Na Jaane.mp3",
-    image: "Tu Hi Na Jaane.jpg",
-    singer: "Sonu Nigam, Neeti Mohan",
-  },
-  {
-    audio: "Tu Isaq Mera.mp3",
-    image: "Tu Isaq Mera.jpg",
-    singer: "Meet Bros, Neha Kakkar",
-  },
-  {
-    audio: "Tu Koi Aur Hai.mp3",
-    image: "Tu Koi Aur Hai.jpg",
-    singer: "Arijit Singh",
-  },
-  {
-    audio: "Tu Mere Paas.mp3",
-    image: "Tu Mere Paas.jpg",
-    singer: "Ankit Tiwari",
-  },
-  {
-    audio: "Tum Saath Ho.mp3",
-    image: "Tum Saath Ho.jpg",
-    singer: "Alka Yagnik, Arijit Singh",
-  },
-  {
-    audio: "Tumhe Apna Banane Ka.mp3",
-    image: "Tumhe Apna Banane Ka.jpg",
-    singer: "Armaan Malik, Neeti Mohan",
-  },
-  {
-    audio: "Ud-Daa Punjab.mp3",
-    image: "Ud-Daa Punjab.jpg",
-    singer: "Vishal Dadlani, Amit Trivedi",
-  },
-  {
-    audio: "Ungli - Dance Basanti.mp3",
-    image: "Ungli - Dance Basanti.jpg",
-    singer: "Vishal Dadlani, Anushka Manchanda",
-  },
-  { audio: "Vadiya.mp3", image: "Vadiya.jpg", singer: "Rashi Raagga" },
-
-  {
-    audio: "Vicky Donor - Pani Da Rang (Male).mp3",
-    image: "Vicky Donor - Pani Da Rang (Male).jpg",
-    singer: "Ayushmann Khurrana",
-  },
-
-  {
-    audio: "Wajah Tum Ho.mp3",
-    image: "Wajah Tum Ho.jpg",
-    singer: "Armaan Malik",
-  },
-  {
-    audio: "Wat Wat (vengeance Mix).mp3",
-    image: "Wat Wat (vengeance Mix).jpg",
-    singer: "Arijit Singh, Anushka Manchanda",
-  },
-  {
-    audio: "Wat Wat Wat.mp3",
-    image: "Wat Wat Wat.jpg",
-    singer: "Arijit Singh",
-  },
-  {
-    audio: "Wazir Theme.mp3",
-    image: "Wazir Theme.jpg",
-    singer: "Gaurav Godkhindi, Rohit Kulkarni",
-  },
-  {
-    audio: "Yaariyan - ABCD.mp3",
-    image: "Yaariyan - ABCD.jpg",
-    singer: "Yo Yo Honey Singh, Benny Dayal",
-  },
-  {
-    audio: "Yaariyan - Baarish.mp3",
-    image: "Yaariyan - Baarish.jpg",
-    singer: "Mohammed Irfan, Gajendra Verma",
-  },
-  {
-    audio: "Yeh Jawaani Hai Deewani - Badtameez Dil.mp3",
-    image: "Yeh Jawaani Hai Deewani - Badtameez Dil.jpg",
-    singer: "Benny Dayal, Shefali Alvares",
-  },
-  {
-    audio: "Yeh Jawaani Hai Deewani - Balam Pichkari.mp3",
-    image: "Yeh Jawaani Hai Deewani - Balam Pichkari.jpg",
-    singer: "Vishal Dadlani, Shalmali Kholgade",
-  },
-  {
-    audio: "Yeh Jawaani Hai Deewani - Dilliwaali Girlfriend.mp3",
-    image: "Yeh Jawaani Hai Deewani - Dilliwaali Girlfriend.jpg",
-    singer: "Arijit Singh, Sunidhi Chauhan",
-  },
-  {
-    audio: "Yeh Jawaani Hai Deewani - Ghagra.mp3",
-    image: "Yeh Jawaani Hai Deewani - Ghagra.jpg",
-    singer: "Rekha Bhardwaj, Vishal Dadlani",
-  },
-  {
-    audio: "Yeh Jawaani Hai Deewani - Ilahi.mp3",
-    image: "Yeh Jawaani Hai Deewani - Ilahi.jpg",
-    singer: "Arijit Singh",
-  },
-  {
-    audio: "Yeh Jawaani Hai Deewani - Kabira (2).mp3",
-    image: "Yeh Jawaani Hai Deewani - Kabira (2).jpg",
-    singer: "Rekha Bhardwaj, Tochi Raina",
-  },
-  {
-    audio: "Yeh Jawaani Hai Deewani - Kabira.mp3",
-    image: "Yeh Jawaani Hai Deewani - Kabira.jpg",
-    singer: "Rekha Bhardwaj, Tochi Raina",
-  },
-  {
-    audio: "Yeh Jawaani Hai Deewani - Subhanallah.mp3",
-    image: "Yeh Jawaani Hai Deewani - Subhanallah.jpg",
-    singer: "Sreeram, Shilpa Rao",
   },
 ];
 var searchResults = audioFiles;
